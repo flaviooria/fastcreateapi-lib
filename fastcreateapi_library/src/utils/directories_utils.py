@@ -15,6 +15,9 @@ def create_directory(path: Union[str, Path] = '', *, path_directory_by_default: 
 
     create_path = Path(path_directory_by_default).joinpath(path)
 
+    if not exist_dir(path_directory_by_default):
+        os.mkdir(path_directory_by_default)
+
     if not exist_dir(create_path):
         os.mkdir(create_path)
 
