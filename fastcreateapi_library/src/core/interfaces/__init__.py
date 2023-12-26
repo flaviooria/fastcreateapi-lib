@@ -1,0 +1,1 @@
+from .architeture import ArchitectureStructure as ArchitectureStructure

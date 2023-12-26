@@ -1,7 +1,10 @@
-from constants.types import Arch
+from core.interfaces.architeture import ArchitectureStructure
 
 
 class GenerateResource:
 
-    def __init__(self, architecture: Arch = 'MSC') -> None:
-        print('Used architecture:', architecture)
+    def __init__(self, architeture: ArchitectureStructure) -> None:
+        self.architeture = architeture
+
+    def create_structure(self):
+        self.architeture.create()
