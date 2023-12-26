@@ -8,7 +8,6 @@ def exist_dir(path: Union[str, Path]):
 
 
 def create_directory(path: Union[str, Path] = '', *, path_directory_by_default: str):
-
     if not exist_dir(path_directory_by_default):
         raise Exception(
             f'{path_directory_by_default} not exists, please create and try again')

@@ -1,1 +1,1 @@
-from .src.application import FastCreateApi
+from fastcreateapi_library.application import FastCreateApiLibrary as FastCreateApiLibrary
