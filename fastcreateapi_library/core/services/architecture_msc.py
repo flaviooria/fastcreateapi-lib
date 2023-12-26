@@ -1,6 +1,7 @@
 from typing import List
 
-from fastcreateapi_library.core.interfaces.architeture import ArchitectureStructure
+from fastcreateapi_library.core.interfaces.architeture import \
+    ArchitectureStructure
 from fastcreateapi_library.utils.directories_utils import create_directory
 
 

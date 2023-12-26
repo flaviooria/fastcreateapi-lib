@@ -1,4 +1,4 @@
-from fastcreateapi_library import FastCreateApiLibrary
+from fastcreateapi_library import ConfigArchitecture, FastCreateApiLibrary
 
 
 def menu():
@@ -11,16 +11,27 @@ def menu():
 
 
 def main():
-    option = int(menu())
-    arch = ''
-    if option == 1:
-        arch = 'MSC'
-    else:
-        arch = 'HEX'
-        module_name = input('Indica el nombre del módulo: ')
+    try:
 
-    app = FastCreateApiLibrary(type_arch=arch)
-    app.generate()
+        option = int(menu())
+        arch = ''
+        config: ConfigArchitecture = ConfigArchitecture()
+
+        if option == 1:
+            arch = 'MSC'
+        else:
+            arch = 'HEX'
+            module_name = input('Indica el nombre del módulo: ').strip()
+            config.module = module_name
+
+        app = FastCreateApiLibrary(type_arch=arch)
+
+        if config.module is not None:
+            app.config = config
+
+        app.generate()
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':

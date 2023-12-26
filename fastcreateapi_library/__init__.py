@@ -1,1 +1,2 @@
 from fastcreateapi_library.application import FastCreateApiLibrary as FastCreateApiLibrary
+from fastcreateapi_library.core.interfaces.config import ConfigArchitecture as ConfigArchitecture
