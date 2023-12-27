@@ -1,5 +1,4 @@
-from fastcreateapi_library.core.interfaces.architeture import \
-    ArchitectureStructure
+from core.interfaces import ArchitectureStructure
 
 
 class GenerateResource:

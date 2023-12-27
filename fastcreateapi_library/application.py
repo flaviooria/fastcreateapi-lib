@@ -2,9 +2,9 @@ from typing import Optional, Union
 
 from constants.types import Arch
 from core.interfaces.config import ConfigArchitecture
-from core.resource import GenerateResource
-from core.services.architecture_hex import ArchitectureHexagonal
-from core.services.architecture_msc import ArchitectureMsc
+from core.services.resource import GenerateResource
+from core.repositories.architecture_hex import ArchitectureHexagonal
+from core.repositories.architecture_msc import ArchitectureMsc
 
 
 class FastCreateApiLibrary:

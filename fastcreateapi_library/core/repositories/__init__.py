@@ -1,0 +1,2 @@
+from .architecture_hex import ArchitectureHexagonal as ArchitectureHexagonal
+from .architecture_msc import ArchitectureMsc as ArchitectureMsc
