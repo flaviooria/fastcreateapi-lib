@@ -1,4 +1,4 @@
-from fastcreateapi_library import FastCreateApiLibrary, ConfigArchitecture
+from fastcreateapi_library import ConfigArchitecture, FastCreateApiLibrary
 
 
 def menu():
